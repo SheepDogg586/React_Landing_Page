@@ -1,8 +1,8 @@
 import React from "react";
 function Footer(){
     return (
-        <footer className="footer">
-			<p>Copyright Your Website 2022</p>
+        <footer className="bg-dark position-absolute bottom-0 w-100">
+		    <p className = "mx-auto text-white" style={{textAlign: "center"}}>Copyright <i class="fa-regular fa-copyright"></i> Your Website 2022</p>
 		</footer>
 )}
 export default Footer;

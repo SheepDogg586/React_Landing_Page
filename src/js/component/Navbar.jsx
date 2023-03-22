@@ -1,21 +1,51 @@
 import React from "react";
-function Navbar(){
-    return (
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
-            <div className="container-fluid">
-                <a className="navbar-brand" href="#">Start Bootstrap</a>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div className="navbar-nav">
-                        <a className="nav-link active" aria-current="page" href="#">Home</a>
-                        <a className="nav-link" href="#">About</a>
-                        <a className="nav-link" href="#">Services</a>
-                        <a className="nav-link disabled">Contact</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-)}
+function Navbar() {
+  return (
+    <nav className="navbar navbar-expand-lg bg-dark">
+      <div className="container-fluid">
+        <a className="text-white navbar-brand" href="#">
+          Start Bootstrap
+        </a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" style={{}} id="navbarNavAltMarkup">
+          <div className="navbar-nav">
+            <ul className="navbar-nav mb-2 ms-auto mb-lg-0 ">
+              <li className="nav-item">
+                <a
+                  className=" text-white nav-link active"
+                  aria-current="page"
+                  href="#"
+                >
+                  Home
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="text-secondary nav-link" href="#">
+                  About
+                </a>
+              </li>
+
+              <li className="nav-item">
+                <a className="text-secondary nav-link disabled">Services</a>
+              </li>
+              <li className="nav-item">
+                <a className="text-secondary nav-link disabled">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  );
+}
 export default Navbar;
